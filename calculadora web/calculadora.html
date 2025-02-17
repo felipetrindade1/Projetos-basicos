@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cont-esquerda">
+        <div class="text-padrao">
+            <img src="./icons8-cardápio.svg" alt="">
+            <h2 style="font-size: 27px;">Padrão</h2>
+        </div>
+
+        <input type="text" class="input-p" value="0" readonly>
+
+        <div class="m">
+            <button class="mbutton">MC</button>
+            <button class="mbutton">MR</button>
+            <button class="mbutton">M+</button>
+            <button class="mbutton">M-</button>
+            <button class="mbutton">MS</button>
+        </div>
+
+        <div class="calc-container">
+
+
+            
+            <button class="calc-button" onclick="Exponencial()">x²</button>
+            <button class="calc-button" onclick="raiz()">²√</button>
+            <button class="calc-button" onclick="clearDisplay()">C</button>
+            <button class="calc-button" onclick="deleteLastCharacter()">delete</button>
+            <button class="calc-button" onclick="appendToDisplay('/')">/</button>
+            <button class="calc-button" onclick="appendToDisplay('7')">7</button>
+            <button class="calc-button" onclick="appendToDisplay('8')">8</button>
+            <button class="calc-button" onclick="appendToDisplay('9')">9</button>
+            <button class="calc-button" onclick="appendToDisplay('*')">x</button>
+            <button class="calc-button" onclick="appendToDisplay('4')">4</button>
+            <button class="calc-button" onclick="appendToDisplay('5')">5</button>
+            <button class="calc-button" onclick="appendToDisplay('6')">6</button>
+            <button class="calc-button" onclick="appendToDisplay('-')">-</button>
+            <button class="calc-button" onclick="appendToDisplay('1')">1</button>
+            <button class="calc-button" onclick="appendToDisplay('2')">2</button>
+            <button class="calc-button" onclick="appendToDisplay('3')">3</button>
+            <button class="calc-button" onclick="appendToDisplay('+')">+</button>
+            <button class="calc-button" onclick="appendToDisplay('0')">0</button>
+            <button class="calc-button" onclick="appendToDisplay(',')">,</button>
+            <button class="calc-button" style="background-color: #056f92; color: white;"
+                onclick="calculateResult()">=</button>
+        </div>
+    </div>
+
+    <div class="cont-direita">
+        <button class="btn-historico" onclick="renderHistorico()">Histórico</button>
+        <div></div> 
+        <button class="btn-historico">Memória</button>
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+
+</html>

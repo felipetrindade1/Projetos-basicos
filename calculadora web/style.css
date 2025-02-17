@@ -1,0 +1,126 @@
+* {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+
+
+}
+
+
+
+body {
+    height: 100vh;
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.cont-esquerda {
+    width: 1700px;
+    height: 100%;  
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.cont-direita {
+    display: flex;
+    margin-left: 15px;
+    gap: 32px;
+    height: 100vh;
+    
+    width: 350px;
+}
+
+.btn-historico {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+
+}
+
+.btn-historico:active,
+.btn-historico:focus { 
+    border-bottom: 1px solid #056f92;  
+    transition: 1s;
+   
+    
+}
+
+.btn-historico:hover {
+    color: rgb(185, 187, 189);
+}
+
+.text-padrao {
+    background-color: #f0f0f0;
+    margin-left: 40px;
+    display: flex;
+    gap: 14px;
+}
+.text-padrao img {
+    height: 30px;
+}
+
+.input-p {
+
+        width: 100%;
+        height: 30%; 
+        font-size: 70px; 
+        text-align: right;
+        direction: ltr;
+        padding-right: 10px; 
+        border: none;
+        pointer-events: none;
+        
+    }
+
+
+.m {
+    width: 400px;
+    height: 60px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mbutton {
+    padding: 20px;
+    border: none;
+    width: 80px;
+    background-color: #f0f0f0;
+
+}
+.mbutton:hover {
+    background-color: rgb(217, 218, 219);
+}
+
+.calc-container {
+    background-color: #f0f0f0;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px
+}
+
+.calc-button {
+    height: 120px;
+    display: flex;
+    width: 385px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 3px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border: 0.1px solid rgb(189, 187, 187);
+    border-radius: 8px;
+}
